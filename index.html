@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta Interactiva - Perú Libre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+            background-color: #f3f4f6; /* Fondo gris claro */
+        }
+        /* Estilo para los elementos <details> (acordeones) */
+        details > summary {
+            list-style: none; /* Quita el marcador de lista por defecto */
+            cursor: pointer; /* Cursor de mano */
+            padding: 1rem;
+            background-color: #ffffff; /* Fondo blanco */
+            border-radius: 0.5rem; /* Bordes redondeados */
+            margin-bottom: 0.5rem; /* Margen inferior */
+            font-weight: 600; /* Texto en negrita */
+            display: flex; /* Para alinear el icono */
+            justify-content: space-between; /* Espacio entre texto e icono */
+            align-items: center; /* Centrar verticalmente */
+            transition: background-color 0.3s ease; /* Transición suave */
+        }
+        details > summary:hover {
+            background-color: #e5e7eb; /* Fondo gris claro al pasar el mouse */
+        }
+        details > summary::marker, /* Oculta el marcador en Firefox */
+        details > summary::-webkit-details-marker /* Oculta el marcador en Chrome/Safari */ {
+            display: none;
+        }
+        /* Icono de flecha para el acordeón */
+        details > summary::after {
+            content: '▼'; /* Flecha hacia abajo por defecto */
+            font-size: 0.8em;
+            transition: transform 0.3s ease; /* Transición suave para la rotación */
+        }
+        details[open] > summary::after {
+            transform: rotate(180deg); /* Rota la flecha cuando está abierto */
+        }
+        details > div {
+            padding: 1rem;
+            background-color: #ffffff; /* Fondo blanco */
+            border-radius: 0 0 0.5rem 0.5rem; /* Bordes redondeados abajo */
+            margin-top: -0.5rem; /* Ajuste para pegar al summary */
+            border: 1px solid #e5e7eb; /* Borde sutil */
+            border-top: none; /* Sin borde superior */
+        }
+        details details > summary {
+            background-color: #f9fafb; /* Fondo ligeramente diferente para subsecciones */
+            font-weight: 500; /* Peso de fuente normal para subsecciones */
+        }
+        details details > summary:hover {
+            background-color: #f3f4f6;
+        }
+        details details > div {
+            background-color: #f9fafb; /* Fondo consistente para contenido de subsecciones */
+            border-color: #f3f4f6;
+        }
+        h1, h2, h3 {
+            margin-bottom: 0.75rem; /* Margen inferior para títulos */
+            font-weight: 700; /* Títulos en negrita */
+        }
+        p {
+            margin-bottom: 1rem; /* Margen inferior para párrafos */
+            line-height: 1.6; /* Interlineado para mejor legibilidad */
+        }
+        strong {
+            color: #1d4ed8; /* Color azul para destacar texto en negrita */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
+
+        <header class="mb-8 text-center">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">PROPUESTA POLÍTICA, IDEOLÓGICA Y PROGRAMÁTICA DEL PARTIDO POLÍTICO NACIONAL PERÚ LIBRE</h1>
+            <p class="text-lg text-gray-600">Por: Waldemar José Cerrón Rojas</p>
+            <p class="text-sm text-gray-500">Político, Doctor en Ciencias de la Educación. Licenciado en derecho y ciencias políticas. Profesor de Investigación de la Universidad Nacional del Centro del Perú.</p>
+            <p class="text-sm text-gray-500">e-mail: josecin4@hotmail.com</p>
+        </header>
+
+        <main>
+            <details class="mb-4 rounded-lg overflow-hidden shadow">
+                <summary class="bg-blue-600 text-white hover:bg-blue-700">Resumen</summary>
+                <div class="border-blue-600">
+                    <p>La propuesta de Perú Libre se basa en un <strong>gobierno socialista</strong> de la nueva izquierda popular, con una <strong>economía popular con mercados</strong> regulados por un Estado soberano y plurinacional. Su ideología, inspirada en el <strong>marxismo, leninismo y el pensamiento de José Carlos Mariátegui y Jaime Cerrón Palomino</strong>, busca la justicia social, la soberanía nacional y la construcción de una comunidad intercultural solidaria. Su programa incluye la <strong>nacionalización de recursos estratégicos</strong>, la revisión de contratos ley, la descentralización de la distribución de la riqueza, la creación de una <strong>nueva Constitución</strong> elaborada por el pueblo, la inversión en <strong>educación y salud pública</strong>, la promoción de la agricultura y la industria, la defensa del medio ambiente, la lucha contra la corrupción, la defensa de los derechos humanos, la seguridad ciudadana y la integración regional latinoamericana.</p>
+                </div>
+            </details>
+
+            <details class="mb-4 rounded-lg overflow-hidden shadow">
+                <summary>I. Contexto político del Perú antes de la aparición de Perú Libre</summary>
+                <div>
+                    <p>Desde la independencia del yugo español, el Perú ha sido escenario de una serie de regímenes que, producto de golpes de Estado o gobiernos improvisados, han favorecido solo intereses minoritarios o extranjeros. La mayoría de presidentes han sido militares que instauraron dictaduras, perjudicando la democracia y el bienestar de los peruanos. La incapacidad de estos regímenes para generar recursos llevó a endeudar al país, condenándolo, a través de deudas y empréstitos, e inclusive en la actualidad, mediante las privatizaciones, a diversas formas de neocolonización.</p>
+                    <p>Mientras que los partidos políticos tradicionales de derecha y de izquierda caviar, en los últimos 30 años, no han tenido, ni tienen el deseo de resolver los problemas nacionales de manera objetiva y científica, las clases sociales más necesitadas, la clase trabajadora, es decir, las mayorías, siguen y seguirán siendo postergadas. Esto se debe a que no tienen una representación verdadera que muestre y demuestre la realización de su ideario, si es que lo tuvieran. Perú Libre, por su parte, tiene un ideario claro que pretende la satisfacción de las necesidades, intereses, así como la permanente orientación y revitalización de capacidades y potencialidades del pueblo de manera organizada.</p>
+                    <p>En este escenario político, se conciben de manera objetiva las columnas ideológicas marxistas, leninistas y mariateguistas del partido de la nueva izquierda socialista popular. Esta es la guía y dirección para alcanzar la justicia y el equilibrio social, para ser dueños de nuestra economía en primera instancia. Sin esta condición, no podremos tomar las decisiones para incrementar los presupuestos para educación, salud, agricultura, para su respectiva industrialización y revitalización económica. La nueva izquierda popular socialista tiene por objetivo que la aplicación de este ideario sirva de base teórica para direccionar la construcción de una <strong>comunidad intercultural solidaria</strong>.</p>
+                </div>
+            </details>
+
+            <details class="mb-4 rounded-lg overflow-hidden shadow">
+                <summary>II. Propuesta política de la nueva izquierda popular socialista de Perú Libre</summary>
+                <div>
+                    <p>Perú Libre se basa en un pensamiento ideológico político y programático socialista de carácter <strong>plurinacional</strong>, reconociendo que cada región del país tiene sus propias necesidades, intereses, capacidades y potencialidades, y por lo tanto, sus propios problemas y soluciones. De esta manera, nació la corriente provinciana, la cual permitió tener una fuerza organizativa capaz de enfrentar al neoliberalismo permitido por las pseudo izquierdas caviares. Estas últimas, en el fondo, nunca quisieron realmente enfrentarlo como tal, sino ser parte de ese engranaje porque sentían su comodidad lejos de las necesidades de nuestros pueblos. La nueva izquierda popular provinciana mayoritaria es la verdadera representación de los pueblos oprimidos.</p>
+                    <p>Perú Libre propone un <strong>gobierno socialista</strong> de la nueva izquierda popular basado en una <strong>economía popular con mercados</strong>. El Estado debe regular el mercado y la estabilidad micro y macroeconómica de manera soberana y plurinacional, permitiendo la inversión en sectores estratégicos, autorizando la libertad de contratación para combatir el monopolio, renegociando contratos y asegurando el pago de impuestos de las empresas. Las ganancias de estas empresas deben ser invertidas en los sectores más vulnerables de nuestra patria. La población debe sentir y pensar que tiene el control del poder económico a favor de las mayorías.</p>
+                    <p>Para lograr este objetivo, Perú Libre propone priorizar la <strong>industrialización</strong> para satisfacer la demanda interna, revisar los contratos ley, <strong>nacionalizar los recursos estratégicos</strong>, descentralizar la distribución de la riqueza, pagar la deuda externa y promover un país con mayor justicia, equidad y prosperidad. Se busca construir un Estado fuerte al servicio del pueblo, un Perú popular, próspero, humanista, descentralista, democrático, inclusivo, internacionalista y antiimperialista, una comunidad intercultural solidaria.</p>
+                    <p>El espacio político ganado democráticamente por la nueva izquierda popular fue gracias a la lealtad y consecuencia de personas decididas a seguir el plan de lucha por la soberanía y desarrollo del Estado peruano. Estas personas enfrentaron los desafíos con el firme espíritu de partido, a pesar de las persecuciones, dificultades y peligros, contra todo acto de corrupción y riesgo en contra del avance partidario. Son quienes lucharon y luchan en la materialización de los objetivos, quienes no retroceden hasta más allá de la victoria.</p>
+                    <p>La historia demostrará que la fuerza organizativa masificada dirigida por el partido político Perú Libre es incontenible. No se debe admitir en absoluto cualquier intento externo, sobre todo interno, de cualquier persona o fuerza política que trate de imponer al partido sus deseos mediante la intimidación, de cambiar el rumbo del progreso y destruir los esfuerzos de la clase trabajadora mayoritaria, de nuestro pueblo peruano para construir y alcanzar una vida digna y en mejores condiciones.</p>
+                </div>
+            </details>
+
+            <details class="mb-4 rounded-lg overflow-hidden shadow">
+                <summary>III. Propuesta ideológica de la nueva izquierda popular socialista de Perú Libre</summary>
+                <div>
+                     <p>Perú Libre propone la presencia y desarrollo de la ideología de la nueva izquierda popular socialista, que se fundamenta en el legado ideológico del <strong>marxismo, leninismo y nuestros connacionales José Carlos Mariátegui y Jaime Cerrón Palomino</strong>. Busca una sociedad más justa, equitativa, intercultural solidaria, una comunidad de futuro compartido, que respalda la soberanía nacional, impulsa la descentralización, defiende los derechos de la clase trabajadora, fortalece el empresariado nacional, se libera del dominio de los monopolios imperialistas, respeta los derechos comunales, combate la corrupción y construye un proyecto de país más democrático. Está liderado por personas con alta competencia técnica y política, para que la transformación social se lleve a cabo de manera consciente, científica y artística.</p>
+                    <p>La ideología de la nueva izquierda popular de Perú Libre se presenta en la historia con principios claros: <strong>democrático, descentralista, internacionalista, inclusivo, soberano, humanista y antiimperialista</strong>. Todo militante del Partido Político Perú Libre se destaca por el desarrollo de tres actividades fundamentales: la defensa del medioambiente, la lucha a favor de la paz mundial y la disposición de cualquier avance científico al servicio del pueblo y la humanidad. La formación de la conciencia política e investigativa orienta el análisis e interpretación del problema social vigente, lo que conduce a la comprensión y acción técnica para la solución de manera concreta. De esta manera, se contribuye correctamente con la dirección ideológica del socialismo de manera técnica y política.</p>
+                    <p>La ideología de la nueva izquierda popular peruana reconoce que la transformación, como cualquier otro cambio social democrático, se logra desde el poder político. Esto implica la participación política activa, investigativa e informada para cambiar las estructuras socioeconómicas, luchar contra la pobreza, la desigualdad y la falta de acceso a servicios básicos, así como abordar las problemáticas específicas de la realidad peruana. Se soporta sobre la base de una fuerte identidad ideológica socialista y en la unidad de sus fuerzas organizativas.</p>
+                    <p>La propuesta ideológica se sustenta en la comprensión de las necesidades e intereses de los pueblos, así como en la orientación de sus capacidades y potencialidades organizativas, lo que conducirá a su desarrollo compartido y solidario desde el gobierno y el poder. Es la clase trabajadora la que debe guiar al pueblo en su conjunto hacia la construcción de una sociedad internacionalista, justa, equitativa y feliz. Se busca un sentido ideológico de unidad en las formas de sentir, pensar y actuar en las decisiones, las cuales deben estar comprometidas con las grandes mayorías, propias de nuestra identidad colectiva y sentido de pertenencia al pueblo.</p>
+                    <p>El estudio reflexivo e investigativo de la estructura ideológica social permite precisar la dirección ideológica para el cambio o no de una determinada estructura socioeconómica. La ideología socialista de la nueva izquierda popular orienta la dirección correcta y consciente hacia la propiedad colectiva de los medios de producción, la justicia y la equidad. De esta manera, la ideología del partido político Perú Libre cumple un rol fundamental en la defensa y promoción de la cooperación mutua solidaria e intercultural para la eliminación de las desigualdades.</p>
+                    <p>Este espacio político busca el desarrollo peruano, centrado en la formación del hombre y la construcción de una <strong>comunidad intercultural solidaria</strong>. La ideología se entiende como un sistema de ideas que une a las personas, fortaleciendo su identidad, unidad, compromiso, decisión y acción para llevar a cabo sus propuestas. Es fundamental para construir una patria compartida, intercultural, equitativa, capaz de afrontar los retos de la globalización económica, inclusiva y la gobernanza basada en consultas. La adhesión a la ideología de construir una patria de mutuo acuerdo solidario y compartido implica una decisión histórica que reafirma el compromiso político con el sentido de la vida humana.</p>
+                    <p>Perú Libre representa y defiende los intereses democráticos, descentralistas, inclusivos, soberanos, humanistas, además antiimperialistas de los pueblos marginados. Es un llamado a la acción conjunta socialista para alcanzar el poder político y económico, participando activamente en las luchas antineoliberales contra la dictadura del capital y el mercado.</p>
+                    <p>Como fuerza organizada, Perú Libre defiende los derechos laborales y busca rescatar las empresas privatizadas y los recursos naturales. Es el vocero del anhelo popular por un nuevo modelo de producción, defensor de la restitución de los derechos fundamentales, protector de los derechos comunales andinos y amazónicos, y abanderado de un proyecto de país, no de un proyecto de grupo empresarial. Finalmente, promueve el internacionalismo latinoamericano.</p>
+                    <p>La propuesta económica de Perú Libre se centra en la consideración equitativa de la iniciativa pública, privada y mixta. La privatización de las instituciones únicamente favorece a las grandes empresas privadas. Al contrario, el funcionamiento de las empresas mixtas, sobre todo las públicas, favorecerá a las grandes mayorías, porque los ingresos económicos serían administrados directamente por quienes producen la riqueza. Un porcentaje se destinaría a los trabajadores, otro a la empresa del Estado y otro al Estado propiamente dicho.</p>
+                </div>
+            </details>
+
+            <details class="mb-4 rounded-lg overflow-hidden shadow">
+                <summary class="bg-green-600 text-white hover:bg-green-700">IV. Propuesta programática del Partido Político Perú Libre</summary>
+                <div class="border-green-600">
+                    <p>Perú Libre se presenta como un partido político que busca una sociedad más justa y equitativa, basada en los principios de la nueva izquierda popular socialista. Su ideología se fundamenta en el legado del marxismo, el leninismo y figuras peruanas como José Carlos Mariátegui y Jaime Cerrón Palomino.</p>
+                    <p>Su propuesta se centra en la soberanía nacional, la descentralización, la defensa de los derechos de la clase trabajadora, la lucha contra la corrupción y la construcción de un proyecto de país más democrático. Perú Libre se define como un partido que busca la transformación social de manera consciente, científica y artística, liderado por personas con alta competencia técnica y política.</p>
+                    <p>El problema de considerar sólo la iniciativa privada de manera libre, con el desarrollo de una economía social de mercado, conllevó al Estado peruano a perder el control económico, especialmente en situaciones de emergencia, epidemias o sobre precios accesibles, justos y equitativos.</p>
+                    <p>La economía social de mercado incrementa las brechas sociales, la injusticia, la desigualdad, el hambre, la miseria, la discriminación y la muerte en la mayoría de los sectores populares. Además, fomenta la explotación tanto de los productos como de los recursos humanos, es decir, de la mano de obra. Por lo tanto, es necesario cambiar e implementar una <strong>economía popular con mercados</strong>.</p>
+                    <p>El servicio al pueblo debe ser desde el pensamiento, el corazón y la acción, lo cual constituye un trípode muy poderoso e invencible. Su práctica otorga la voluntad y convicción necesarias para comprender, transformarse y transformar su contexto local y global de manera solidaria e intercultural.</p>
+                     <p>Es más digno, hermoso y necesario orientar nuestras fuerzas hacia la solución, luego de haber identificado el problema. Entendiéndose así, se presenta el programa de las líneas programáticas de Perú Libre.</p>
+                    <p>El Estado y la población deben responder e interactuar de manera responsable. No se trata de crear programas asistencialistas que no generan ni revierten ingresos económicos. Si bien es cierto que se puede producir, se hace necesario tener el control económico de la producción, abriendo la posibilidad de que se puedan constituir empresas privadas, públicas y mixtas.</p>
+                    <p>Cada institución deberá contar con un instituto de investigación y producción, a fin de que produzcan y masifiquen dicha producción a favor del Estado, la empresa y la producción. De esta manera, no habrá pretextos para decir que el Estado solo invierte y las instituciones no revierten economía. Un porcentaje de estos ingresos económicos deben ser destinados a los trabajadores de las instituciones, otro porcentaje devuelto al Estado, y otro a la empresa, sea pública o privada. Sumado al presupuesto que el Estado asigna a cada institución, hay mejoras económicas en todos los niveles.</p>
+                    <p>La solución a las dolencias sociales es poner en práctica los programas socialistas propuestos en el ideario de Perú Libre. Los ejes programáticos de Perú Libre constituyen la transformación y desarrollo de la realidad social, porque se basan en acciones posibles de llevar a cabo en educación, salud, agricultura, transportes, minería, ambiente, turismo, comunicaciones, relaciones exteriores, etc.</p>
+                    <p>Solo las fuerzas organizativas capaces de comprender el poder que desarrollan la unidad de sus capacidades y potencialidades para satisfacer sus necesidades e intereses pueden alcanzar y mantener el gobierno y el poder. Es el poder de la unidad, el programa del partido político de la nueva izquierda popular socialista y la acción revolucionaria consciente de las comunidades interculturales solidarias la garantía del desarrollo humano con justicia y equidad.</p>
+
+                    <div class="mt-6 space-y-3">
+                        <details>
+                            <summary>4.1. Hacia una nueva constitución política</summary>
+                            <div>
+                                <p>Proponemos una <strong>nueva Constitución elaborada por el pueblo a través de una Asamblea Constituyente</strong>. La Constitución de 1993, impuesta tras un golpe de Estado, ha consolidado el neoliberalismo en el Perú, priorizando el individualismo, el mercantilismo y la privatización, demostrando una incapacidad y una negativa a resolver los problemas fundamentales del país.</p>
+                                <p>El pueblo organizado debe elaborar su propia Carta Magna, sobre la base de sus necesidades e intereses, desmantelando el neoliberalismo y estableciendo un nuevo régimen económico y social, solidario, inclusivo, humanista, internacionalista, soberano, democrático y descentralista, haciendo uso de sus capacidades y potencialidades. Esta nueva Constitución abre las puertas a un destino solidario, justo y de bienestar común.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.2. Economía popular con mercados</summary>
+                            <div>
+                                <p>Proponemos la implementación y desarrollo de una <strong>economía popular con mercados</strong>, en la cual el Estado debe controlar la economía mayor, regular el mercado para que los precios, la oferta y la demanda estén al servicio de la población, especialmente de la clase trabajadora. Priorizar la demanda interna, revisar los contratos, nacionalizar los recursos estratégicos, descentralizar la distribución de la riqueza.</p>
+                                <p>Industrializar los productos andino-amazónicos y costeros a través de empresas peruanas para estabilizar la micro y macroeconomía, asegurar la soberanía nacional. Invertir en sectores estratégicos considerando el pluralismo económico y la libertad de contratar, pagar la deuda externa. Perú Libre busca promover un país con mayor justicia, equidad y prosperidad, donde la población perciba que tiene el control del poder económico.</p>
+                                <p>Perú Libre propone un cambio revolucionario en el modelo económico del país, buscando un Estado fuerte y soberano al servicio del pueblo. Controlar la gran economía, promover un verdadero pluralismo económico, combatir el monopolio, renegociar contratos, asegurar el pago de impuestos por todas las empresas, invertir las ganancias en el Perú, nacionalizar sectores estratégicos, cancelar la deuda pública. Un Perú popular, próspero y soberano.</p>
+                            </div>
+                        </details>
+                         <details>
+                            <summary>4.3. Política de educación pública</summary>
+                            <div>
+                                <p>Proponemos destinar el <strong>10% del PBI</strong> a la creación de una nueva escuela pública, especializada y única. Desarrollar un diseño curricular a nivel nacional, regional y local, que pueda erradicar el analfabetismo y mejorar los niveles de comprensión lectora. Asegurar el aumento de salarios para los docentes. Promover la creación de universidades públicas en cada región con acceso libre, multidisciplinario relacionado con el servicio militar voluntario.</p>
+                                <p>Se plantean iniciativas socialistas para mejorar el sistema educativo y de salud en el ámbito universitario y escolar. Estas medidas incluyen la ampliación de becas a nivel nacional e internacional, la promoción de la creación de empresas y patentes basadas en productos universitarios, y el fortalecimiento de la relación entre la salud y la educación a través de programas de odontología y psicología en las instituciones educativas.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.4. Política de salud pública</summary>
+                            <div>
+                                <p>Proponemos la declaración de <strong>emergencia del Sector Salud</strong>, con un aumento presupuestario del <strong>10% del PBI</strong>, para establecer un sistema de salud único, universal, gratuito, descentralizado, de calidad y participativo. Es fundamental contar con hospitales regionales especializados, incluido un hospital de salud bucal. Fijar una tarifa única para las clínicas privadas, fortalecer la implementación y modernización de los medios de diagnóstico.</p>
+                                <p>Se debe promover la construcción de universidades estatales regionales de ciencias médicas. Es necesario potenciar el programa de residencia médica regional. Es crucial reactivar los programas de médicos de familia, odontólogo por colegio, psicólogo por colegio, y la brigada médica internacionalista. Además, es fundamental fortalecer la despenalización del aborto y se deben implementar medidas para evitar la concentración y el monopolio en la salud.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.5. Política agraria</summary>
+                            <div>
+                                <p>Proponemos aumentar el presupuesto para garantizar la seguridad alimentaria a través de la promoción de la <strong>agricultura y la ganadería tecnificada</strong>, productiva, industrial, ecológica y agroexportadora. Se construirán grandes reservorios de agua con la participación del Estado y la sociedad, se promoverá la desalinización del agua de mar. Se impulsará la recuperación y titulación de tierras, y la expansión de la frontera agrícola sostenible.</p>
+                                <p>Se combatirá la informalidad, el narcotráfico y la apropiación ilegal de tierras por parte de empresas privadas. Se promoverá la industrialización de la hoja de coca y otras plantas con propiedades medicinales, con su respectivo registro y titulación legal. El objetivo es lograr un sector agrícola más equitativo, eficiente y sostenible, que impulse la exportación agrícola como motor de desarrollo económico y beneficie a la población peruana.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.6. Transporte y medios de comunicación</summary>
+                            <div>
+                                <p>Proponemos un sistema de transporte moderno e integrado que conecte las regiones y el progreso del país, incluyendo vías terrestres, ferroviarias, aéreas y marítimas. Nuestro enfoque es científico, democrático, descentralizado y social, priorizando el desarrollo regional. Para asegurar un control estatal y la participación ciudadana, revisaremos y renegociaremos los contratos de concesión. Buscamos fortalecer la gestión pública de las infraestructuras, revitalizando las empresas estatales.</p>
+                                <p>Se propone una ley para <strong>regular los medios de comunicación</strong> con el fin de promover la democratización, la descentralización económica y la pluralidad. El objetivo es combatir la concentración del poder, el monopolio, la manipulación, la desinformación y la explotación que ejercen estos medios, difundiendo la educación para promover la unidad y la identidad del pueblo. Se rechaza la intervención de ONGs como la SIP, que podrían favorecer intereses externos.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.7. Sobre política medioambiental</summary>
+                            <div>
+                                <p>Proponemos una política medioambiental que priorice la <strong>defensa y conservación del medio ambiente</strong>, con la participación activa de las comunidades, para construir un futuro sostenible. Implementaremos la Zonificación Económica Ecológica (ZEE) regional, combatiremos la tala ilegal, promoveremos un currículo regional sostenible e impulsaremos el tratamiento de residuos sólidos y líquidos. Prohibiremos la privatización del agua y promoveremos un extractivismo sostenible y responsable.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.8. Sobre cultura y turismo</summary>
+                            <div>
+                                <p>La <strong>descentralización turística y promoción de la cultura andina amazónica</strong>, son claves para un desarrollo turístico sostenible. Debemos aprovechar al máximo el potencial de nuestra riqueza cultural y natural. Es necesario fortalecer una política de Estado orientada a nacionalizar nuestros patrimonios, promocionar la cultura de mejora continua en la atención al turista, la seguridad ciudadana y la identidad nacional, respetando las comunidades nativas y sus derechos.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.9. Sobre la descentralización</summary>
+                            <div>
+                                <p>La <strong>descentralización</strong> es fundamental para una organización democrática y debe ser permanente, obligatoria, dinámica, irreversible, democrática, integral, subsidiaria y gradual. El Estado debe reconocer que somos un país plurinacional, y trazar políticas de Estado que terminen con la segregación centralista contra los pueblos del Perú. Es necesario crear la Dirección Regional de Economía y Finanzas en cada región, otorgarles autonomía política, administrativa, económica, fiscal, tributaria, jurídica, policial, vial, etc.</p>
+                                <p>El Estado debe eliminar los órganos paralelos a las funciones de los gobiernos regionales y otorgar la transferencia total de competencias sobre la mediana y gran minería, la tala, la licitación de obras, los proyectos especiales, EsSalud, la administración de infraestructuras deportivas, el traslado de los domicilios fiscales y tributarios de las empresas a la región del lugar de operación y explotación de las riquezas, la titulación de tierras urbanas, los derechos sobre el mar territorial para las regiones con litoral marítimo, etc.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.10. Sobre política laboral</summary>
+                            <div>
+                                <p>Defendemos el <strong>derecho al trabajo</strong>, vinculado al derecho a la vida, al desarrollo personal, la dignidad y el bienestar familiar, pilares de una sociedad justa y equitativa. La libertad sindical, la participación de sus líderes en todas las instancias de gobierno, la defensa de la estabilidad, equidad y condiciones laborales de género y discapacidad, la remuneración justa por trabajo físico y remoto, honrar el pago la deuda social, la capacitación permanente de los trabajadores y resolución de los conflictos laborales.</p>
+                                <p>Es urgente la elaboración de un <strong>código laboral</strong> en consenso con el gobierno, colegios profesionales y trabajadores, para acabar con la anarquía salarial y la desigualdad de la informalidad laboral. Fortalecer el Sistema Nacional de Pensiones (SNP), eliminar toda evasión de responsabilidad empresarial. Debemos combatir el subempleo y el empleo precario, la trata de personas y abolir el trabajo infantil. Es necesario promover la agricultura y la industria, en lugar de la minería para generar mayor empleo.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.11. Sobre política anticorrupción</summary>
+                            <div>
+                                <p>La <strong>corrupción</strong> en Perú no es un problema de mediocridad jurídica o policial, sino de génesis política. El neoliberalismo, con su culto a la propiedad privada y la rentabilidad económica, facilita el saqueo y la explotación de los pueblos, donde la corrupción se convierte en una consecuencia inevitable. La propiedad privada, como antesala, pauta todo y la corrupción es su consecuencia, involucrando a instituciones públicas y privadas, y siendo una de las causas de la pobreza y el subdesarrollo.</p>
+                                <p>Combatir la corrupción requiere cambios profundos. La descentralización económica, la transparencia del financiamiento de campaña, de los TLC, las concesiones y contratos ley, la consulta vinculante a los pueblos, la simplificación administrativa, la eliminación de sueldos dorados, la eliminación de la inmunidad política, la creación de una contraloría para el sector privado, la abolición de la licitación con inmunidad diplomática, instituciones autónomas del poder económico y político internacional.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.12. Política en seguridad ciudadana</summary>
+                            <div>
+                                <p>La <strong>seguridad ciudadana</strong> en Perú, exige un sistema justo, eficiente y sostenible, que garantice la paz social y el bienestar del pueblo. Combatir la inseguridad ciudadana requiere cambios profundos como la descentralización de la seguridad y participación ciudadana, la lucha contra la desigualdad, un control efectivo de la tenencia ilegal de armas, la reorganización de la PNP. Un Plan de reinserción social para reos, respeto a las rondas campesinas y delimitación clara del rol de las fuerzas armadas.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.13. Sobre la política de los derechos humanos</summary>
+                            <div>
+                                <p>Rechazamos la sistemática violación de los <strong>derechos humanos</strong> en Perú, perpetrada por los regímenes de Belaúnde, García y Fujimori, y exigimos justicia para las víctimas. Los treinta DDHH de la Declaración Universal deben ser cumplidos por el gobierno. Es inaceptable la desigualdad en la aplicación de la justicia, condenamos todo acto de violación a los DD. HH., individual o colectivo, y exigimos que los autores sean investigados, procesados, sentenciados y recluidos.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.14. Política legislativa</summary>
+                            <div>
+                                <p>El Parlamento debe ser un espacio de trabajo donde los representantes del pueblo legislen, fiscalicen, representen y ejecuten las leyes, con resultados que respondan directamente al pueblo. Se deben eliminar los privilegios de la clase política, como los altos sueldos e inmunidad. Es necesario establecer mecanismos como el sufragio universal, la <strong>revocabilidad de los cargos</strong> de elección popular, sueldo justo y el mandato imperativo para garantizar una verdadera representación popular.</p>
+                            </div>
+                        </details>
+                         <details>
+                            <summary>4.15. Sobre la política de justicia</summary>
+                            <div>
+                                <p>Proponemos un sistema judicial más justo, transparente, eficiente y soberano mediante la <strong>elección y revocatoria de magistrados por voto popular</strong>. Nueva conformación de la Sala Plena de la Corte Suprema de Justicia y Junta de Fiscales Supremos, la creación de órganos administrativos y disciplinarios independientes, el combate al lawfare, el respeto a la soberanía jurídica y la justicia en las comunidades originarias. Desterrar la influencia del poder económico y político en la justicia.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.16. La mujer socialista</summary>
+                            <div>
+                                <p>Proponemos que las <strong>mujeres al igual que los hombres</strong> deben participar de manera activa en la construcción de una estructura y superestructura socialista. Las mujeres, poseen las mismas capacidades intelectuales que los hombres, por lo tanto deben tener acceso al conocimiento, la última tecnología, la pedagogía, la medicina, la ingeniería, la arquitectura, el derecho, la industrialización, la política y la milicia. Trabajar dignamente, en un ambiente de libertad, igualdad y respeto mutuo.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.17. Política sobre nuestras fuentes de riqueza</summary>
+                            <div>
+                                <p>Proponemos una <strong>renegociación de las concesiones y la nacionalización</strong> de nuestros recursos naturales, incluyendo minerales, hidrocarburos e hidroenergía. Exigimos la revisión de los TLC y convenios internacionales para que nuestra patria se beneficie del 70% u 80% de las utilidades, considerando a las comunidades como accionistas; de no aceptar estas condiciones, procederemos a la estatización de los yacimientos. Asimismo, eliminaremos las planillas doradas y otros beneficios excesivos.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.18. Sobre la soberanía nacional</summary>
+                            <div>
+                                <p>Nuestra <strong>soberanía</strong> depende del control de nuestros recursos estratégicos. Proponemos nacionalizar los yacimientos mineros, gasíferos, petroleros e hidroenergéticos; revisar los TLC y otros tratados; fortalecer nuestras fronteras, defender la agricultura nativa, ecológica; recuperar los corredores aéreos, aeropuertos, ferrocarriles, puertos y carreteras; la soberanía jurídica y tecnológica; y proteger nuestra empresa. Debemos evitar la dependencia comercial y la presencia de bases militares extranjeras.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.19. Política económica empresarial</summary>
+                            <div>
+                                <p>Planteamos la priorización, promoción, protección y desarrollo del <strong>empresariado nacional</strong> sobre el capital transnacional. El empresariado peruano se fortalecerá con la formalización de todas las empresas, incluida la minería ilegal, pago de tributos, respeto a disposiciones laborales, consulta vinculante a los pueblos indígenas y campesinos, transferencia tecnológica y control ambiental. La generación de empleo y economía regional genera riqueza y bienestar para el pueblo peruano.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.20. Nuestros derechos sobre el mar territorial</summary>
+                            <div>
+                                <p>Expresamos nuestro rechazo a la Convemar que busca ceder nuestra soberanía territorial a solo 12 millas marinas, permitiendo que otros países exploten nuestra Zona Económica Exclusiva. Debemos defender nuestra <strong>soberanía marítima</strong> y aprovechar al máximo sus riquezas y recursos hidrobiológicos. Planificar la explotación y descentralización marítima en beneficio de las mayorías, otorgando derechos a los gobiernos regionales para que genere riqueza y desarrollo para todos los peruanos.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>4.21. Política exterior</summary>
+                            <div>
+                                <p>Proponemos la <strong>integración regional latinoamericana</strong> para construir un futuro de paz, justicia y desarrollo en América Latina. Debemos resistir la influencia del imperialismo y sus instituciones, como la OEA, CIADI, CIDH, ONU, UNCITRAL, GAFI y las ONG, con la CELAC, UNASUR, TBI, BS FSR y los BRICS. Para fortalecer la autonomía económica, adherirnos a la propuesta de un Banco del Sur y un Fondo del Sur. Nuestra meta es construir una América Latina libre, soberana y unida.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </details>
+
+            <details class="mb-4 rounded-lg overflow-hidden shadow">
+                <summary class="bg-gray-700 text-white hover:bg-gray-800">Conclusiones</summary>
+                <div class="border-gray-700">
+                    <p>El Perú se mantiene bajo gobiernos que solo favorecen intereses extranjeros y minoritarios. Estos gobiernos pretenden continuar con su política de privatización, endeudamiento y neocolonialismo, demostrando incapacidad para generar recursos propios y establecer una economía propia. Estos partidos políticos, tanto de derecha como de izquierda caviar, no han resuelto, de manera científica, los problemas de las clases sociales mayoritarias. En este escenario aparece la propuesta política ideológica y programática socialista de la nueva izquierda popular dirigida por el partido político nacional Perú Libre.</p>
+                    <p>Perú Libre propone un gobierno socialista basado en una economía popular con mercado, mediante un cambio de constitución que permita al Estado regular los precios del mercado. La nueva izquierda popular socialista es consciente de que estos cambios solo son posibles desde el gobierno y el poder, cuando las fuerzas organizativas mayoritarias interpretan sus necesidades e intereses, y orientan sus capacidades y potencialidades para lograr, ver y disfrutar el poder de la unidad al servicio de la felicidad de los pueblos. Se pretende un Estado fuerte, popular, que logre la estabilidad micro y macroeconómica de manera soberana y plurinacional, que oriente la construcción de una comunidad intercultural solidaria, debido a que cada región del país tiene sus propios problemas y, por lo tanto, sus propias soluciones.</p>
+                    <p>La propuesta ideológica de la nueva izquierda popular socialista del partido político nacional Perú Libre se soporta en el marxismo, leninismo, mariateguismo y el pensamiento de Jaime Cerrón Palomino, la cual constituye la guía teórica y práctica para la participación política activa, investigativa e informada para cambiar las estructuras socioeconómicas. Esto implica la construcción de una comunidad intercultural solidaria de futuro compartido considerando sus principios: democrático, descentralista, internacionalista, inclusivo, soberano, humanista, antiimperialista. La lucha por la paz mundial, la erradicación de la pobreza y las desigualdades, la defensa del ambiente, afrontar los retos de la globalización económica, poniendo cualquier avance científico al servicio del pueblo y la humanidad mediante la consulta popular.</p>
+                    <p>Perú Libre presenta una propuesta programática socialista basada en una economía popular con mercados, donde el Estado juega un rol importante en la regulación y la distribución de la riqueza de manera justa y equitativa, desde las iniciativas pública, privada y mixta. Abarca una amplia gama de áreas, incluyendo la educación, la salud, la agricultura, el transporte, el medio ambiente, la cultura, la descentralización, la política laboral, la seguridad ciudadana, los derechos humanos, la justicia, la mujer, la soberanía nacional, la política económica empresarial, el mar territorial, la política exterior y la lucha contra la corrupción. Con el objetivo de construir una comunidad intercultural solidaria, justa y equitativa, todo militante debe actuar con el pensamiento, el corazón y la acción, lo cual constituye un trípode muy poderoso e invencible.</p>
+                </div>
+            </details>
+
+        </main>
+
+        <footer class="mt-8 text-center text-sm text-gray-500">
+            Plantilla interactiva generada para facilitar la lectura y comprensión del documento original.
+        </footer>
+
+    </div>
+
+    <script>
+        // El elemento <details> funciona nativamente en la mayoría de navegadores modernos.
+        // No se requiere JavaScript adicional para la funcionalidad básica de acordeón.
+        console.log("Plantilla interactiva cargada.");
+    </script>
+
+</body>
+</html>
